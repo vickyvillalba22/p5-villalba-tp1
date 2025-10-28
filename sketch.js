@@ -50,7 +50,7 @@ function dibujarTriangulosYCirculos(){
   push()
   translate(30, 120)
   
-  // mis triangulos con funciones de orden superior
+  //triangulos azules
   function crearTresTriangulosAzules(ubicacionY1, ubicacionY2){
     return function tresTriangulos(){
       let medidaTriangulo = 20
@@ -83,7 +83,7 @@ function dibujarTriangulosYCirculos(){
 
   translate(400, 100)
   
-  //tringulitos amarillos
+  //circulos amarillos
   function crearTresCirculosAmarillos(ubiY){
     return function circulosAmarillos(){
       let ubicacionSectionX = 80
@@ -120,7 +120,7 @@ function dibujarComposicionCentral(){
   translate(width/2, height/2 + 20)
 
   dibujarCirculosConMovimiento()
-  dibujarTriangulosDeAcento()
+  dibujarTriangulos()
   dibujarLineasHorizontales()
 
   pop()
@@ -147,7 +147,7 @@ function dibujarCirculosConMovimiento(){
   circle(20 + mov3, 60 + mov1, 70)
 }
 
-function dibujarTriangulosDeAcento(){
+function dibujarTriangulos(){
   fill(colores.azulOscuro[0], colores.azulOscuro[1], colores.azulOscuro[2])
   triangle(-150, 80, -120, 80, -135, 50)
   
